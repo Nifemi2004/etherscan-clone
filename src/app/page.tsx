@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
 
 const Home = () => {
   const [message, setMessage] = useState<string>("");
@@ -20,6 +21,7 @@ const Home = () => {
     <div>
       <Header />
       <h1>{message}</h1>
+      <Main />
     </div>
   );
 };
