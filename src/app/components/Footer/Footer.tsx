@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-100 text-gray-700 text-[.78515625rem] ">
       {/* Top Section */}
-      <div className="flex justify-between items-center border-b border-gray-300 py-4 mx-[10.301%]">
+      <div className="flex justify-between items-center border-b border-gray-300 py-4 mx-[5%]">
         <div className="flex gap-4">
           <div className="">
             <button className=" border p-2 rounded-full bg-gray-200 hover:bg-gray-300">
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col flex-wrap md:flex-row md:px-2 px-6 py-8 mx-[10.301%]">
+      <div className="flex flex-col flex-wrap md:flex-row md:px-2 px-6 py-8 mx-[5%]">
         {/* Info Section */}
         <div className="flex-1">
           <h4 className="text-lg font-semibold">Powered by Ethereum</h4>
@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="text-center border-t border-gray-300 px-6 py-4 flex justify-between items-center mx-[10.101vw]">
+      <div className="text-center border-t border-gray-300 px-6 py-4 flex justify-between items-center mx-[5vw]">
         <p className="text-gray-600">Etherscan © 2025 (F1)</p>
         <p className="mt-2">
           Donations:{" "}

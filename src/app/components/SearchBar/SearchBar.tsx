@@ -24,7 +24,7 @@ export default function SearchBar() {
           backgroundImage: 'url("/waves-light.svg")', // Replace with your image URL
         }}
       >
-        <div className="pl-[12%] flex flex-col gap-3 pt-[2rem]">
+        <div className="pl-[5%] flex flex-col gap-3 pt-[2rem]">
           <div className="text-white text-[1.2rem] font-semibold">
             The Ethereum Blockchain Explorer
           </div>

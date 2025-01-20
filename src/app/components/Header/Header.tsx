@@ -528,7 +528,7 @@ const Header: React.FC = () => {
     <header className="bg-white border-b shadow-sm">
       {/* Top Bar */}
       <div className="flex flex-wrap justify-between items-center px-4 md:px-6 py-2 text-sm bg-gray-100 ">
-        <div className="flex items-center gap-4 text-[0.8rem] ml-[10.101%]">
+        <div className="flex items-center gap-4 text-[0.8rem] ml-[4.201%]">
           <span>
             ETH Price:{" "}
             <strong className="text-green-600">$3,484.07 (+5.66%)</strong>
@@ -537,7 +537,7 @@ const Header: React.FC = () => {
             Gas: <strong className="text-blue-600">8.395 Gwei</strong>
           </span>
         </div>
-        <div className="flex items-center gap-2 md:gap-4 mr-[10.101%]">
+        <div className="flex items-center gap-2 md:gap-4 mr-[4.401%]">
           <button className="text-black text-[15px] p-2 border rounded-md hover:bg-gray-200">
             <FiBookOpen />
           </button>
@@ -551,7 +551,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Navigation Bar */}
-      <nav className="flex justify-between items-center px-4 mx-[] lg:mx-[7%] xl:mx-[10.101%]">
+      <nav className="flex justify-between items-center px-4 mx-[] lg:mx-[7%] xl:mx-[4.201%]">
         {/* Logo */}
         <div className="flex items-center">
           <img
