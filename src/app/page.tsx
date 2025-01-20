@@ -1,8 +1,9 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
+import SearchBar from "./components/SearchBar/SearchBar";
 
 const Home = () => {
   const [message, setMessage] = useState<string>("");
@@ -20,8 +21,9 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <h1>{message}</h1>
+      <SearchBar />
       <Main />
+      <Footer />
     </div>
   );
 };
