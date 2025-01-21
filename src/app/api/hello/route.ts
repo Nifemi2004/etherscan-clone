@@ -1,5 +1,4 @@
 import { NextResponse, NextRequest } from "next/server";
-// @ts-ignore
 import mailer from "nodemailer-promise";
 
 export async function POST(request: NextRequest) {
