@@ -1,9 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
+// @ts-ignore
 import mailer from "nodemailer-promise";
-
-export async function GET() {
-  return NextResponse.json({ message: "Hello from the backend!" });
-}
 
 export async function POST(request: NextRequest) {
   try {

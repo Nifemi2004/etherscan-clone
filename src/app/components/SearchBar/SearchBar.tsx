@@ -1,3 +1,5 @@
+"use client"
+
 import { redirect } from "next/navigation";
 import { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
@@ -71,8 +73,8 @@ export default function SearchBar() {
               className="inline-block w-4 h-4 mx-1"
             />
             <span>
-              Meet TREAT: Shib's finale token with AI, Metaverse, DeFi & strong
-              governance.
+              Meet TREAT: Shib&apos;s finale token with AI, Metaverse, DeFi &
+              strong governance.
             </span>
             <a
               href="#"
