@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             <FaRedditAlien />
           </button>
         </div>
-        <a href="font-bold hover:underline hover:text-blue-700">
+        <a href="#header" className="font-bold hover:underline hover:text-blue-700 no-underline" style={{textDecoration: "none"}}>
           <FaLongArrowAltUp className="inline-block mr-2" />
           Back to Top
         </a>

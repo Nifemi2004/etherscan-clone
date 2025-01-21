@@ -526,7 +526,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white border-b shadow-sm">
+    <header className="bg-white border-b shadow-sm" id="header">
       {/* Top Bar */}
       <div className="flex flex-wrap justify-between items-center px-4 md:px-6 py-2 text-sm bg-gray-100 ">
         <div className="flex items-center gap-4 text-[0.8rem] ml-[4.201%]">
