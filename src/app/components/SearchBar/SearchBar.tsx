@@ -67,7 +67,7 @@ export default function SearchBar() {
               </button>
             </div>
           </div>
-          {/* <div className="mt-2 text-sm text-white">
+          <div className="mt-2 text-sm text-white">
             <span>Sponsored: </span>
             <img
               src="/treat.webp"
@@ -84,7 +84,7 @@ export default function SearchBar() {
             >
               Find here.
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
