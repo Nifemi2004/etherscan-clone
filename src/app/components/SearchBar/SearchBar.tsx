@@ -32,7 +32,7 @@ export default function SearchBar() {
           <div className="text-white text-[1.2rem] font-semibold">
             The Ethereum Blockchain Explorer
           </div>
-          <div className="flex justify-center items-center gap-1 bg-white w-fit rounded-lg py-2 px-3">
+          <div className="flex justify-center items-center gap-1 bg-white w-full  md:w-fit rounded-lg py-2 px-3">
             <div className="hidden sm:block">
               <select name="filters" id="filters" className="">
                 <option value="All Filters">All Filters</option>
@@ -48,7 +48,7 @@ export default function SearchBar() {
               <input
                 type="text"
                 placeholder="Search by Address / Txn Hash / Block / Private Key"
-                className="sm:w-[50vw] md:w-[40vw] h-9 rounded-md text-black px-4 "
+                className="w-[80vw] xs:w-[80vw] sm:w-[65vw]  md:w-[40vw] h-9 rounded-md text-black px-4 "
                 value={searchText}
                 onChange={(event) => setSearchText(event.target.value)}
                 onKeyDown={(event) => {
@@ -67,7 +67,7 @@ export default function SearchBar() {
               </button>
             </div>
           </div>
-          {/* <div className="mt-2 text-sm text-white">
+          <div className="mt-2 text-sm text-white">
             <span>Sponsored: </span>
             <img
               src="/treat.webp"
@@ -84,7 +84,7 @@ export default function SearchBar() {
             >
               Find here.
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

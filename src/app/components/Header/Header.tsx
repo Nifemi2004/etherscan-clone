@@ -349,9 +349,9 @@ const Header: React.FC = () => {
       </ul>
     ),
     More: (
-      <div className="flex sm:flex-wrap gap-5 bg-white p-5 shadow-lg rounded-lg w-full max-w-screen-xl mx-auto space-x-5 text-[.83515625rem]">
+      <div className="flex flex-col md:flex-row gap-5 bg-white p-5 shadow-lg rounded-lg w-full max-w-screen-xl mx-auto">
         {/* Left Section: Tools & Services */}
-        <div className="flex flex-col bg-gray-100 rounded-lg p-5 w-1/4">
+        <div className="bg-gray-100 rounded-lg p-5 w-full md:w-1/4">
           <h6 className="text-gray-800 font-semibold text-lg mb-2">
             Tools & Services
           </h6>
@@ -371,7 +371,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Middle Section: Tools */}
-        <div className="flex-1 px-5">
+        <div className="flex-1 md:w-1/4 px-5">
           <h6 className="text-gray-800 font-semibold text-lg mb-3">Tools</h6>
           <ul className="space-y-2">
             <li>
@@ -414,7 +414,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Middle Section: Explore */}
-        <div className="flex-1 px-5">
+        <div className="flex-1 md:w-1/4 px-5">
           <h6 className="text-gray-800 font-semibold text-lg mb-3">Explore</h6>
           <ul className="space-y-2">
             <li>
@@ -461,7 +461,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Right Section: Services */}
-        <div className="flex-1 px-5">
+        <div className="flex-1 md:w-1/4 px-5">
           <h6 className="text-gray-800 font-semibold text-lg mb-3">Services</h6>
           <ul className="space-y-2">
             <li>
@@ -528,7 +528,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white border-b shadow-sm" id="header">
       {/* Top Bar */}
-      <div className="flex flex-wrap justify-between items-center px-4 md:px-6 py-2 text-sm bg-gray-100 ">
+      <div className=" justify-between hidden md:flex md:flex-wrap items-center px-4  md:px-6 py-2 text-sm bg-gray-100 ">
         <div className="flex items-center gap-4 text-[0.8rem] ml-[4.201%]">
           <span>
             ETH Price:{" "}
