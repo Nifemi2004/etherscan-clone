@@ -2,7 +2,10 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <div className=" grid lg:grid-cols-3 grid-flow-row-dense grid-cols-1 md:grid-cols-2 gap-2 m-auto xl:max-w-[90%] max-w-[98%] rounded-xl my-10 border-[1px] md:py-6 px-4 shadow-md">
+    <div
+      style={{ marginTop: "-6rem", background: "white" }}
+      className=" grid lg:grid-cols-3 grid-flow-row-dense grid-cols-1 md:grid-cols-2 gap-2 m-auto xl:max-w-[90%] max-w-[98%] rounded-xl my-10 border-[1px] md:py-6 px-4 shadow-md"
+    >
       <div className="md:border-r-[1px] max-md:border-b-[1px] max-md:mb-3 max-md:py-5 md:px-5 col-span-2 md:col-span-1">
         <blockquote className="flex items-start pb-6 border-b-[1px] ">
           <img

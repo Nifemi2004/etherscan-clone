@@ -4,7 +4,7 @@ import { FaMedium, FaFacebookF } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 text-[.78515625rem] ">
+    <footer className="bg-gray-100 text-gray-700 text-[.78515625rem] mt-10 ">
       {/* Top Section */}
       <div className="flex justify-between items-center border-b border-gray-300 py-4 mx-[5%]">
         <div className="flex gap-4">
