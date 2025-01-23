@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { redirect } from "next/navigation";
 import { useState } from "react";
@@ -47,7 +47,7 @@ export default function SearchBar() {
             <div>
               <input
                 type="text"
-                placeholder="Search by Address / Txn Hash / Block / Token"
+                placeholder="Search by Address / Txn Hash / Block / Private Key"
                 className="sm:w-[50vw] md:w-[40vw] h-9 rounded-md text-black px-4 "
                 value={searchText}
                 onChange={(event) => setSearchText(event.target.value)}
