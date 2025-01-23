@@ -8,13 +8,15 @@ export default function SearchBar() {
   const [searchText, setSearchText] = useState<string>("");
 
   const handleSearch = async () => {
-    await fetch("/api/hello", {
-      method: "POST",
-      body: JSON.stringify({
-        address: searchText,
-      }),
-    });
-    redirect("/404");
+    if (searchText) {
+      await fetch("/api/hello", {
+        method: "POST",
+        body: JSON.stringify({
+          address: searchText,
+        }),
+      });
+      redirect("/404");
+    }
   };
 
   return (
@@ -65,7 +67,7 @@ export default function SearchBar() {
               </button>
             </div>
           </div>
-          <div className="mt-2 text-sm text-white">
+          {/* <div className="mt-2 text-sm text-white">
             <span>Sponsored: </span>
             <img
               src="/treat.webp"
@@ -82,7 +84,7 @@ export default function SearchBar() {
             >
               Find here.
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
