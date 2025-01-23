@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from "react";
 
 interface ITxnData {
@@ -58,15 +59,15 @@ const LatestTransactions = () => {
       const rows = document.querySelectorAll(".txnRow");
       rows.forEach((row, idx) => {
         if (idx === rows.length - 1) {
-          row.style.borderBottom = "none"; // Remove border for the last .blockRow
+          (row as HTMLElement).style.borderBottom = "none"; // Remove border for the last .blockRow
         } else {
-          row.style.borderBottom = "1px solid #e9ecef"; // Apply border for other rows
+          (row as HTMLElement).style.borderBottom = "1px solid #e9ecef"; // Apply border for other rows
         }
       });
     }, []);
     
   return (
-    <div className="lg:w-[49.4%] rounded-xl border-[1px] shadow-md">
+    <div className="lg:w-[49.4%] rounded-xl border-[1px] shadow-md mb-[4rem]">
       <div className="flex justify-between px-3 py-4 border-b-[1px]">
         <h2 className="font-medium" style={{ fontWeight: "bold" }}>
           Latest Transactions

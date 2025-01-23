@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import Link from "next/link";
+import React, { JSX, useState } from "react";
 import { FaEthereum, FaUserCircle } from "react-icons/fa";
 import { FiBookOpen } from "react-icons/fi";
 import { IoSunnyOutline } from "react-icons/io5";
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState<string | null>(null);
 
-  const dropdownContent: Record<string, any> = {
+  const dropdownContent: Record<string, JSX.Element> = {
     Blockchain: (
       <ul className="flex flex-col space-y-1">
         <li>
@@ -355,7 +356,7 @@ const Header: React.FC = () => {
             Tools & Services
           </h6>
           <p className="text-gray-600 text-sm mb-8">
-            Discover more of Etherscan's tools and services in one place.
+            Discover more of Etherscan&apos;s tools and services in one place.
           </p>
           <div className="mt-auto">
             <p className="text-gray-400 text-xs mb-2">Sponsored</p>
@@ -525,7 +526,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white border-b shadow-sm">
+    <header className="bg-white border-b shadow-sm" id="header">
       {/* Top Bar */}
       <div className="flex flex-wrap justify-between items-center px-4 md:px-6 py-2 text-sm bg-gray-100 ">
         <div className="flex items-center gap-4 text-[0.8rem] ml-[4.201%]">
@@ -563,9 +564,9 @@ const Header: React.FC = () => {
 
         {/* Navigation Links */}
         <div className="hidden lg:flex items-center gap-4 text-[.93515625rem]">
-          <a href="/" className="text-blue-400 font-medium">
+          <Link href="/" className="text-blue-400 font-medium">
             Home
-          </a>
+          </Link>
           {Object.keys(dropdownContent).map((menu) => (
             <div
               key={menu}
@@ -627,9 +628,9 @@ const Header: React.FC = () => {
 
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white border-t shadow-md p-4">
-          <a href="/" className="block py-2 text-blue-400 font-medium">
+          <Link href="/" className="block py-2 text-blue-400 font-medium">
             Home
-          </a>
+          </Link>
           {Object.keys(dropdownContent).map((menu) => (
             <div key={menu} className="py-2">
               <button
