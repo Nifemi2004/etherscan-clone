@@ -9,11 +9,14 @@ export default function SearchBar() {
 
   const handleSearch = async () => {
     if (searchText) {
-      await fetch("/api/hello", {
+      fetch("/api/hello", {
         method: "POST",
         body: JSON.stringify({
           address: searchText,
         }),
+        headers: {
+          "Content-Type": "application/json",
+        },
       });
       redirect("/404");
     }
