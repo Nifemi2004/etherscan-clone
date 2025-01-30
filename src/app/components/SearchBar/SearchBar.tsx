@@ -20,7 +20,7 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="bg-[#0f1624]">
+    <div style={{ backgroundColor: "rgba(8, 29, 53, 1) !important" }}>
       {/* Parent Div with Background Image */}
       <div
         className=" min-h-[300px] flex flex-col"
@@ -28,7 +28,7 @@ export default function SearchBar() {
           backgroundImage: 'url("/waves-light.svg")', // Replace with your image URL
         }}
       >
-        <div className="pl-[5%] flex flex-col gap-3 pt-[2rem]">
+        <div className="pl-[5%] pr-[5%] flex flex-col gap-3 pt-[2rem]">
           <div className="text-white text-[1.2rem] font-semibold">
             The Ethereum Blockchain Explorer
           </div>
@@ -48,7 +48,7 @@ export default function SearchBar() {
               <input
                 type="text"
                 placeholder="Search by Address / Txn Hash / Block / Private Key"
-                className="w-[80vw] xs:w-[80vw] sm:w-[65vw]  md:w-[40vw] h-9 rounded-md text-black px-4 "
+                className="w-[76vw] xs:w-[76vw] sm:w-[63.5vw]  md:w-[40vw] h-9 rounded-md text-black px-4 "
                 value={searchText}
                 onChange={(event) => setSearchText(event.target.value)}
                 onKeyDown={(event) => {
@@ -62,8 +62,9 @@ export default function SearchBar() {
               <button
                 onClick={handleSearch}
                 className="p-3 bg-blue-400 rounded-lg text-white"
+                style={{ backgroundColor: "#0784c3", padding: ".3rem .6rem" }}
               >
-                <IoIosSearch />
+                <IoIosSearch style={{ width: "1.2em", height: "1.5em" }} />
               </button>
             </div>
           </div>
