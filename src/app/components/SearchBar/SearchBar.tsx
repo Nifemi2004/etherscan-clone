@@ -20,10 +20,10 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="bg-[#0f1624]">
+    <div className="bg-[#071E35]">
       {/* Parent Div with Background Image */}
       <div
-        className=" min-h-[300px] flex flex-col"
+        className=" min-h-[300px] flex flex-col opacity"
         style={{
           backgroundImage: 'url("/waves-light.svg")', // Replace with your image URL
         }}
