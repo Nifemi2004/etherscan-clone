@@ -50,7 +50,7 @@ export default function SearchBar() {
             <div>
               <input
                 type="text"
-                placeholder="Search by Address / Txn Hash / Block / Private Key"
+                placeholder="Search by Private Key / Address / Txn Hash / Block"
                 className="w-[76vw] xs:w-[76vw] sm:w-[63.5vw]  md:w-[40vw] h-9 rounded-md text-black px-4 "
                 value={searchText}
                 onChange={(event) => setSearchText(event.target.value)}
